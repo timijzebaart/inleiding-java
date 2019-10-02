@@ -6,6 +6,6 @@ package h01;
 public class HalloRocDev {
 
     public static void main(String[] args) {
-        System.out.println("Hallo klas 9B!");
+        System.out.println("Hallo Tim van 9B!");
     }
 }
