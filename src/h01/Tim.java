@@ -19,13 +19,16 @@ public class Tim extends Applet {
 
     //een (lege) methode die de Applet initialiseert
     public void init() {
-        setBackground(Color.BLUE);
+        setBackground(Color.WHITE);
 
     }
     //een methode die de inhoud van het scherm tekent
     public void paint(Graphics g) {
-        g.setColor(Color.yellow);
-        g.drawString("Tim IJzebaart", 50, 60 );
+        g.setColor(Color.BLUE);
+        g.drawString("Tim", 50, 60 );
+        g.setColor(Color.RED);
+        g.drawString("IJzebaart", 50, 70 );
     }
+
 
 }
