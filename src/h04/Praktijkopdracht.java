@@ -32,6 +32,24 @@ public class Praktijkopdracht extends Applet {
         g.drawString("Gevulde rechthoek met ovaal",100,95);
         ///Gevulde rechthoek met ovaal
 
+        g.setColor(Color.magenta);
+        g.fillOval(150,100,80,50);
+        g.setColor(Color.black);
+        g.drawString("Gevulde ovaal",150,165);
+        ///Gevulde ovaal
+
+        g.drawOval(300,30,80,50);
+        g.setColor(Color.magenta);
+        g.fillArc(300,30,80,50,1,45);
+        g.setColor(Color.black);
+        g.drawString("Taartpunt met ovaal eromheen",270,95);
+        ///Taartpunt met ovaal eromheen
+
+        g.setColor(Color.black);
+        g.drawOval(300,100,50,50);
+        g.drawString("Cirkel",310,165);
+        ///Cirkel
+
 
     }
 }
