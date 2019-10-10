@@ -13,7 +13,7 @@ public class Secondeberekening extends Applet {
         seconden = 60;
         uur = 60;
         dag = 24;
-        jaar = dag * 365;
+        jaar = 365;
         uitkomstUur = seconden * uur;
         uitkomstDag = uitkomstUur * dag;
         uitkomstJaar = uitkomstDag * jaar;
