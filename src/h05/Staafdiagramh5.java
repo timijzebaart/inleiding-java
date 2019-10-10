@@ -13,9 +13,9 @@ public class Staafdiagramh5 extends Applet {
 
 
     public void init() {
-        gewichtJeroen = 140;
-        gewichtHans = 20;
-        gewichtValerie = 60;
+        gewichtJeroen = 130;
+        gewichtHans = 50;
+        gewichtValerie = 80;
         hoogteXas = 240;
 
     }
