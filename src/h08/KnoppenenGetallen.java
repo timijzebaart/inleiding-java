@@ -20,6 +20,7 @@ public class KnoppenenGetallen extends Applet {
     }
 
     public void paint(Graphics g) {
+
         g.drawString("Het getal is " + getal, 50, 60 );
     }
 
