@@ -8,7 +8,7 @@ public class Opdracht83 extends Applet  {
     TextField tekstvak;
     Label label;
     Button knop;
-    Double btw, getal;
+    double getal;
 
     public void init() {
         tekstvak = new TextField("",20);
@@ -17,14 +17,11 @@ public class Opdracht83 extends Applet  {
         label = new Label("Het te berekenen bedrag: "    );
 
         knop = new Button("Ok");
-        knop.addActionListener( new  KnopListener() );
+        knop.addActionListener( new  TekstvakListener() );
 
         add(label);
         add(tekstvak);
         add(knop);
-
-        btw = getal / 100 * 21;
-
 
     }
 
@@ -38,14 +35,10 @@ public class Opdracht83 extends Applet  {
         public void actionPerformed(ActionEvent e) {
             String s = tekstvak.getText();
             getal = Double.parseDouble( s );
+            getal=getal*1.21;
             repaint();
         }
     }
-    class KnopListener implements ActionListener{
-        public void actionPerformed( ActionEvent e ){
-            tekstvak.getText();
-            repaint();
-        }
-    }
+
 
 }
