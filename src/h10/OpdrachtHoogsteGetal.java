@@ -7,12 +7,14 @@ import java.awt.event.ActionListener;
 
 public class OpdrachtHoogsteGetal extends Applet {
     TextField tekstvak;
-    int hoogsteGetal;
+    int hoogsteGetal, laagsteGetal;
+    boolean firstNumber;
 
     public void init(){
         tekstvak = new TextField("", 20);
         Label label = new Label("Type hier een getal en druk op enter");
         tekstvak.addActionListener( new TekstvakListener() );
+        firstNumber = true;
         add(label);
         add(tekstvak);
 
@@ -20,6 +22,7 @@ public class OpdrachtHoogsteGetal extends Applet {
 
     public void paint(Graphics g){
         g.drawString("Hoogste getal: " + hoogsteGetal, 50, 60);
+        g.drawString("Laagste getal: " + laagsteGetal, 50, 80);
 
     }
 
@@ -28,9 +31,17 @@ public class OpdrachtHoogsteGetal extends Applet {
 
             String s = tekstvak.getText();
             int invoer = Integer.parseInt(s);
-            if (invoer > hoogsteGetal) {
+            if (firstNumber){
+                firstNumber = false;
                 hoogsteGetal = invoer;
-
+                laagsteGetal = invoer;
+            }
+            else {
+                if (invoer > hoogsteGetal) {
+                    hoogsteGetal = invoer;
+                } else if (invoer < laagsteGetal) {
+                    laagsteGetal = invoer;
+                }
             }
 
             repaint();
