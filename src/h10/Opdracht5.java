@@ -17,7 +17,7 @@ public class Opdracht5 extends Applet {
     public void init(){
         tekstvak = new TextField("",20);
         tekstvak.addActionListener(new TekstvakListener() );
-        label = new Label("Typ hier uw cijfer");
+        label = new Label("Typ hier uw cijfers en klik op OK om uw gemiddelde te zien");
         knop = new Button("OK");
         knop.addActionListener( new KnopListener() );
 
