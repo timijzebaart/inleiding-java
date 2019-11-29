@@ -47,7 +47,6 @@ public class Praktijkopdracht extends Applet {
 
     class KnopListener implements ActionListener{
         public void actionPerformed(ActionEvent e) {
-            System.out.println("KLIK");
             String naam = tekstvak.getText();
             String nummer = tekstvak2.getText();
 
